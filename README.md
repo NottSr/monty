@@ -2,7 +2,7 @@
 
 <p><img src="https://pbs.twimg.com/media/CFYYWy6UEAE9Ow-.png"><br><br></p>
 
-**<p><big>This project was made to manipulate Monty byte codes, understand the use of data structures such as FIFO, LIFO (Stacks and Queues), and practice a proper way to use global variables </big></p>**<br>
+**<p><big>This project was made to manipulate Monty byte codes, understand the use of data structures such as FIFO, LIFO (Stacks and Queues), and practice a proper way to use global variables.</big></p>**<br>
 
 **<big><h2>Requirements</h2></big>**
 
