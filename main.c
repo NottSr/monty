@@ -35,6 +35,11 @@ int main(int argc, char *argv[])
 		OpCode = strtok(buffer, "\t\n ");
 		if (OpCode)
 		{
+			if(OpCode[0] == '#')
+			{
+				line++;
+				continue;
+			}
 			Oparam = strtok(NULL, "\t\n ");
 			func_exec(OpCode, Oparam, line);
 		}
