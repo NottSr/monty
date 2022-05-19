@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 
 	while ((l_char = getline(&buffer, &l_len, cFile)) != -1)
 	{
-		OpCode = strtok(buffer, "\t\n");
+		OpCode = strtok(buffer, "\t\n ");
 		if (OpCode)
 		{
 			Oparam = strtok(NULL, "\t\n ");

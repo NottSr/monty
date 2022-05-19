@@ -10,9 +10,10 @@ void (*func_selec(char *op))(stack_t **, unsigned int)
 	instruction_t ins[] = {
 		{"push", push},
 		{"pall", pall},
-		{NULL, NULL}};
+		{NULL, NULL}
+	};
 
-	while (ins[i].opcode)
+	while (ins[i].opcode != NULL)
 	{
 		if (strcmp(op, ins[i].opcode) == 0)
 			return (ins[i].f);
