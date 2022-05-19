@@ -55,6 +55,7 @@ void pop(stack_t **stack, unsigned int line_num);
 void swap(stack_t **stack, unsigned int line_num);
 void add(stack_t **stack, unsigned int line_num);
 void nop(stack_t **stack, unsigned int line_num);
+void sub(stack_t **stack, unsigned int line_num);
 void func_exec(char *OpCode, char *Oparam, unsigned int line);
 size_t stalen(stack_t *stack);
 int check_dig(char *param);
