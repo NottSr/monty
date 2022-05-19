@@ -6,12 +6,13 @@
  */
 size_t stalen(stack_t *stack)
 {
+	stack_t *current = stack;
 	size_t n_nodes = 0;
 
-	while (stack)
+	while (current)
 	{
 		n_nodes++;
-		stack = stack->next;
+		current = current->next;
 	}
 	return (n_nodes);
 }
