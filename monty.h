@@ -59,6 +59,7 @@ void nop(stack_t **stack, unsigned int line_num);
 void sub(stack_t **stack, unsigned int line_num);
 void _div(stack_t **stack, unsigned int line_num);
 void mul(stack_t **stack, unsigned int line_num);
+void mod(stack_t **stack, unsigned int line_num);
 void func_exec(char *OpCode, char *Oparam, unsigned int line);
 size_t stalen(stack_t *stack);
 int check_dig(char *param);
