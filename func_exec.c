@@ -15,7 +15,7 @@ void func_exec(char *OpCode, char *Oparam, unsigned int line)
 	{
 		if (strcmp(OpCode, "push") == 0)
 		{
-			if (Oparam == NULL)
+			if (Oparam == NULL || check_dig(Oparam) == -1)
 			{
 				fprintf(stderr, "L%d: usage: push integer\n", line);
 				exit(EXIT_FAILURE);
