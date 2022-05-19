@@ -13,7 +13,7 @@ void push(stack_t **stack, unsigned int param)
 	if (new == NULL)
 	{
 		fprintf(stderr, "Error: malloc failed\n");
-		exit(0);
+		exit(EXIT_FAILURE);
 	}
 
 	new->n = param;

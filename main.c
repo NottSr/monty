@@ -21,14 +21,14 @@ int main(int argc, char *argv[])
 	if (argc != 2)
 	{
 		fprintf(stderr, "USAGE: monty file\n");
-		exit(0);
+		exit(EXIT_FAILURE);
 	}
 
 	cFile = fopen(fName, "r");
 	if (cFile == NULL)
 	{
 		fprintf(stderr, "Error: Can't open file %s\n", fName);
-		exit(1);
+		exit(EXIT_FAILURE);
 	}
 
 	while ((l_char = getline(&buffer, &l_len, cFile)) != -1)
@@ -38,6 +38,11 @@ int main(int argc, char *argv[])
 		{
 			Oparam = strtok(NULL, "\t\n ");
 			op_ch = func_selec(OpCode);
+			if(op_ch == NULL)
+			{
+				fprintf(stderr, "L%d: unknown instruction %s\n", line, OpCode);
+				exit(EXIT_FAILURE);
+			}
 			if (strcmp(OpCode, "push") == 0)
 			{
 				op_ch(&head, atoi(Oparam));
