@@ -1,9 +1,10 @@
 #ifndef MONTY_H
 #define MONTY_H
 
+/** Macros used */
 #define UNUSED(x) (void)(x)
 
-/** Libraries used*/
+/** Libraries used */
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -12,7 +13,7 @@
 #include <string.h>
 #include <ctype.h>
 
-/** Structures used*/
+/** Structures used */
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -43,10 +44,10 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-/**Global variable*/
+/** Global variable */
 extern stack_t *head;
 
-/** Prototypes used*/
+/** Prototypes used */
 void (*func_selec(char *s))(stack_t **, unsigned int);
 void push(stack_t **stack, unsigned int param);
 void pall(stack_t **stack, unsigned int line_num);
@@ -56,6 +57,7 @@ void swap(stack_t **stack, unsigned int line_num);
 void add(stack_t **stack, unsigned int line_num);
 void nop(stack_t **stack, unsigned int line_num);
 void sub(stack_t **stack, unsigned int line_num);
+void _div(stack_t **stack, unsigned int line_num);
 void func_exec(char *OpCode, char *Oparam, unsigned int line);
 size_t stalen(stack_t *stack);
 int check_dig(char *param);

@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * sub - function that adds the top two elements of the stack
+ * sub - function that sub the top two elements of the stack
  * @stack: Stack
  * @line_num: Line location
  * return: void
