@@ -17,6 +17,7 @@ void (*func_selec(char *op))(stack_t **, unsigned int)
 		{"nop", nop},
 		{"sub", sub},
 		{"div", _div},
+		{"mul", mul},
 		{NULL, NULL}
 	};
 
@@ -25,7 +26,7 @@ void (*func_selec(char *op))(stack_t **, unsigned int)
 		if (strcmp(op, ins[i].opcode) == 0)
 			return (ins[i].f);
 
-		++i;
+		i++;
 	}
 
 	return (NULL);

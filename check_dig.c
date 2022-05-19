@@ -10,14 +10,14 @@ int check_dig(char *param)
 	{
 		if (param[0] == 45)
 		{
-			++param;
+			param++;
 			continue;
 		}
 
 		if (isdigit(*param) == 0)
 			return (-1);
 
-		++param;
+		param++;
 	}
 	return (0);
 }
