@@ -10,6 +10,7 @@ void (*func_selec(char *op))(stack_t **, unsigned int)
 	instruction_t ins[] = {
 		{"push", push},
 		{"pall", pall},
+		{"pint", pint},
 		{NULL, NULL}
 	};
 
