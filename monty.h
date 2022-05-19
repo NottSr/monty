@@ -49,6 +49,7 @@ extern stack_t *head;
 void (*func_selec(char *s))(stack_t **, unsigned int);
 void push(stack_t **stack, unsigned int param);
 void pall(stack_t **stack, unsigned int line_num);
+void func_exec(char *OpCode, char *Oparam, unsigned int line);
 void free_s(void);
 
 #endif /* MONTY_H */

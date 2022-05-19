@@ -5,7 +5,7 @@
  */
 void free_s(void)
 {
-	stack_t *aux;
+	stack_t *aux = NULL;
 
 	while (head)
 	{
