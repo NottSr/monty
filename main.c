@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 		{
 			if(OpCode[0] == '#')
 			{
-				line++;
+				++line;
 				continue;
 			}
 			Oparam = strtok(NULL, "\t\n ");
