@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * pchar - function that prints all values of a stack
+ * pchar - function that prints the char at the top of the stack
  * @stack: Stack
  * @line_num: Line location
  * return: void
