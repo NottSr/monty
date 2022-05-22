@@ -62,6 +62,7 @@ void mul(stack_t **stack, unsigned int line_num);
 void mod(stack_t **stack, unsigned int line_num);
 void pchar(stack_t **stack, unsigned int line_num);
 void pstr(stack_t **stack, unsigned int line_num);
+void rotl(stack_t **stack, unsigned int line_num);
 void func_exec(char *OpCode, char *Oparam, unsigned int line);
 size_t stalen(stack_t *stack);
 int check_dig(char *param);
