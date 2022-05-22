@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * div - function that div the top two elements of the stack
+ * _div - function that div the top two elements of the stack
  * @stack: Stack
  * @line_num: Line location
  * return: void

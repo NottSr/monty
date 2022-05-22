@@ -11,7 +11,7 @@ void rotl(stack_t **stack, unsigned int line_num)
 	unsigned int aux = 0;
 
 	UNUSED(line_num);
-	if(current && current->next)
+	if (current && current->next)
 	{
 		while (current->next)
 		{
