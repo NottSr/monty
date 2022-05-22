@@ -15,7 +15,7 @@ void rotr(stack_t **stack, unsigned int line_num)
 	{
 		while (current->next)
 			current = current->next;
-		
+
 		while (current->prev)
 		{
 			aux = current->n;
